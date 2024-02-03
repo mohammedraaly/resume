@@ -60,6 +60,42 @@ video {
   height: auto;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -228,106 +264,122 @@ video {
           <p>Developed a comprehensive Point of Sales (POS) system named Exup Inventory with features including Cheque, Credit, and POS transactions. The system caters to various industries such as Textile, Fancy, Mobile Shops, etc.
             <br><br><p class="w3-text-teal">Domain: Wholesale and Retail, Accounting.</p>
             <br>
-            <h4><i class="fa fa-file-video-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Video</b></h4>
+            <!-- <h4><i class="fa fa-file-video-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Video</b></h4> -->
             
-            <video width="480" controls>
-              <source src="./video/demoVideo1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            
-            <br><br>
-            <h4><i class="fa fa-picture-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Images</b></h4>
 
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p1.jpg">
-                  <img src="./images/p1.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Login page</div>
-              </div>
+            <button class="accordion"><i class="fa fa-file-video-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Video</b></button>
+            <div class="panel">
+            
+              <video width="480" controls>
+                <source src="./video/demoVideo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
             </div>
 
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p2L.jpg">
-                  <img src="./images/p2L.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">System dashboard Light</div>
+            <button class="accordion"><i class="fa fa-picture-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Images</b></button>
+            <div class="panel">
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p1.jpg">
+                    <img src="./images/p1.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Login page</div>
+                </div>
               </div>
+  
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p2L.jpg">
+                    <img src="./images/p2L.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">System dashboard Light</div>
+                </div>
+              </div>
+  
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p2D.jpg">
+                    <img src="./images/p2D.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">System dashboard Dark</div>
+                </div>
+              </div>
+  
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p3.jpg">
+                    <img src="./images/p3.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">View all stocks</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p4.jpg">
+                    <img src="./images/p4.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Invoice generating</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p5.jpg">
+                    <img src="./images/p5.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Credit details</div>
+                </div>
+              </div>
+  
+  
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p6.jpg">
+                    <img src="./images/p6.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Income details</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p7L.jpg">
+                    <img src="./images/p7L.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Cheque reports light</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p7D.jpg">
+                    <img src="./images/p7D.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Cheque reports dark</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="./images/p8.jpg">
+                    <img src="./images/p8.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Cheque details</div>
+                </div>
+              </div>
+
             </div>
 
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p2D.jpg">
-                  <img src="./images/p2D.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">System dashboard Dark</div>
-              </div>
-            </div>
 
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p3.jpg">
-                  <img src="./images/p3.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">View all stocks</div>
-              </div>
-            </div>
+           
             
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p4.jpg">
-                  <img src="./images/p4.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Invoice generating</div>
-              </div>
-            </div>
-            
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p5.jpg">
-                  <img src="./images/p5.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Credit details</div>
-              </div>
-            </div>
+            <!-- <br><br> -->
+            <!-- <h4><i class="fa fa-picture-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Images</b></h4> -->
 
-
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p6.jpg">
-                  <img src="./images/p6.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Income details</div>
-              </div>
-            </div>
             
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p7L.jpg">
-                  <img src="./images/p7L.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Cheque reports light</div>
-              </div>
-            </div>
-            
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p7D.jpg">
-                  <img src="./images/p7D.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Cheque reports dark</div>
-              </div>
-            </div>
-            
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="./images/p8.jpg">
-                  <img src="./images/p8.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Cheque details</div>
-              </div>
-            </div>
 
           <!-- <hr> -->
         </div>
@@ -359,7 +411,11 @@ video {
           <h5><i class="fa fa-code fa-fw w3-margin-right w3-text-teal"></i><b>Additional Achievements:</b></h5>
           <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6> -->
           <p>Created an Advanced SMTP Auto mail and Text Message function, enhancing communication processes within the developed systems.
-            <br><br><p class="w3-text-teal">Note: 	I have extensive experience in developing customized Windows applications tailored to meet the unique requirements of various clients. The aforementioned list highlights some of the major software projects I have successfully completed.</p>
+            <br><br>
+            <p class="w3-text-teal">
+              <b>Note: 	I have extensive experience in developing customized Windows applications tailored to meet the unique requirements of various clients. The aforementioned list highlights some of the major software projects I have successfully completed.</b>
+
+            </p>
           <br>  
           </p>
         </div>
@@ -381,6 +437,25 @@ video {
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>&copy;  Mohammed Jaleel Mohammed Raaly<br>Feb-2024</p>
 </footer>
+
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 
 </body>
 </html>
