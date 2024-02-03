@@ -32,7 +32,6 @@ div.desc {
 }
 
 .responsive {
-  padding: 10 6px;
   float: left;
   width: 25%;
 }
@@ -56,6 +55,11 @@ div.desc {
   clear: both;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -68,13 +72,15 @@ div.desc {
     <!-- Left Column -->
     <div class="w3-third">
     
-      <div class="w3-white w3-text-grey w3-card-4">
+      <div class="w3-white w3-text-black w3-card-4">
         <div class="w3-display-container">
           <img src="./images/profile.jpg" style="width:100%">
           <div class="w3-display-bottomleft w3-container w3-text-black">
             <h2>MJ. Mohammed Raaly</h2>
           </div>
         </div>
+
+        <br>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>.NET Development (C#)</p>
           <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-teal"></i>Dubai Internet City, Dubai</p>
@@ -209,7 +215,7 @@ div.desc {
 
 
       <div class="w3-container w3-card w3-white w3-justify">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-code-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Major Software Projects</h2>        
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-code-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Software Projects</h2>        
 
         <div class="w3-container">
           <h5><b><i class="fa fa-microchip fa-fw w3-margin-right w3-text-teal"></i>Tools:</b></h5>
@@ -223,7 +229,8 @@ div.desc {
             <br><br><p class="w3-text-teal">Domain: Wholesale and Retail, Accounting.</p>
             <br>
             <h4><i class="fa fa-file-video-o fa-fw w3-margin-right w3-text-teal"></i><b> Demo Video</b></h4>
-            <video width="480" height="270" controls>
+            
+            <video width="480" controls>
               <source src="./video/demoVideo1.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
